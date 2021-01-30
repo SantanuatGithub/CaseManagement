@@ -1,3 +1,9 @@
+# Code Coverage
+
+<a href="https://codecov.io/gh/SantanuatGithub/CaseManagement">
+  <img src="https://codecov.io/gh/SantanuatGithub/CaseManagement/branch/master/graph/badge.svg?token=Y11MCLTHd5"/>
+</a>
+
 # Salesforce DX Project: Next Steps       
     
 
