@@ -1,0 +1,44 @@
+<!--
+  @name customerCases
+  @description showing Case records in Home Page
+  @author Santanu Pal
+  @date dec,2020
+ -->
+<template>
+  <table class="slds-table slds-table--bordered slds-table_col-bordered slds-table--cell-buffer" if:true={cases}>
+    <thead>
+        <tr class="slds-text-title--caps">
+            <th scope="col">
+                <div class="slds-truncate" title="Case Number">Case Number</div>
+            </th>
+            <th scope="col">
+                <div class="slds-truncate" title="Subject">Subject</div>
+            </th>
+            <th scope="col">
+                <div class="slds-truncate" title="Origin">Origin</div>
+            </th>
+            <th scope="col">
+              <div class="slds-truncate" title="Status">Status</div>
+          </th>
+        </tr>
+    </thead>
+    <tbody>
+          <template for:each={cases} for:item="cs">
+            <tr key={cs.Id}>
+                <th scope="row" data-label="Case Number">
+                    <div class="slds-truncate" title={cs.CaseNumber}>{cs.CaseNumber}</div>
+                </th>
+                <td data-label="Subject">
+                    <div class="slds-truncate" title={cs.Subject}>{cs.Subject}</div>
+                </td>
+                <td data-label="Origin">
+                    <div class="slds-truncate" title={cs.Origin}>{cs.Origin}</div>
+                </td>
+                <td data-label="Status">
+                  <div class="slds-truncate" title={cs.Status}>{cs.Status}</div>
+              </td>
+            </tr>
+          </template>
+    </tbody>
+  </table>  
+</template>
